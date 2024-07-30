@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "loja-games": {
+    "y": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/loja-games",
+            "outputPath": "dist/y",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,13 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -64,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "loja-games:build:production"
+              "browserTarget": "y:build:production"
             },
             "development": {
-              "browserTarget": "loja-games:build:development"
+              "browserTarget": "y:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "loja-games:build"
+            "browserTarget": "y:build"
           }
         },
         "test": {
@@ -91,7 +87,6 @@
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -101,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "1617134e-ea14-457d-bbc4-1b00522badd4"
+    "analytics": "3c0afb15-5ff4-4238-a2fd-b5cee459eb25"
   }
 }
